@@ -1,0 +1,12 @@
+C:\Users\HP\source\repos\ASP-NET-Core-Hotel\Hotel.Common\bin\Debug\net6.0\Hotel.Common.deps.json
+C:\Users\HP\source\repos\ASP-NET-Core-Hotel\Hotel.Common\bin\Debug\net6.0\Hotel.Common.dll
+C:\Users\HP\source\repos\ASP-NET-Core-Hotel\Hotel.Common\bin\Debug\net6.0\Hotel.Common.pdb
+C:\Users\HP\source\repos\ASP-NET-Core-Hotel\Hotel.Common\obj\Debug\net6.0\Hotel.Common.csproj.AssemblyReference.cache
+C:\Users\HP\source\repos\ASP-NET-Core-Hotel\Hotel.Common\obj\Debug\net6.0\Hotel.Common.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\HP\source\repos\ASP-NET-Core-Hotel\Hotel.Common\obj\Debug\net6.0\Hotel.Common.AssemblyInfoInputs.cache
+C:\Users\HP\source\repos\ASP-NET-Core-Hotel\Hotel.Common\obj\Debug\net6.0\Hotel.Common.AssemblyInfo.cs
+C:\Users\HP\source\repos\ASP-NET-Core-Hotel\Hotel.Common\obj\Debug\net6.0\Hotel.Common.csproj.CoreCompileInputs.cache
+C:\Users\HP\source\repos\ASP-NET-Core-Hotel\Hotel.Common\obj\Debug\net6.0\Hotel.Common.dll
+C:\Users\HP\source\repos\ASP-NET-Core-Hotel\Hotel.Common\obj\Debug\net6.0\refint\Hotel.Common.dll
+C:\Users\HP\source\repos\ASP-NET-Core-Hotel\Hotel.Common\obj\Debug\net6.0\Hotel.Common.pdb
+C:\Users\HP\source\repos\ASP-NET-Core-Hotel\Hotel.Common\obj\Debug\net6.0\ref\Hotel.Common.dll
