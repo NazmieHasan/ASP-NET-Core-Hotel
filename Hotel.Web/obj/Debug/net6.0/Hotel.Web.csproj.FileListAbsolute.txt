@@ -154,3 +154,7 @@ C:\Users\HP\source\repos\ASP-NET-Core-Hotel\Hotel.Web\obj\Debug\net6.0\Hotel.Web
 C:\Users\HP\source\repos\ASP-NET-Core-Hotel\Hotel.Web\obj\Debug\net6.0\ref\Hotel.Web.dll
 C:\Users\HP\source\repos\ASP-NET-Core-Hotel\Hotel.Web\bin\Debug\net6.0\Hotel.Common.dll
 C:\Users\HP\source\repos\ASP-NET-Core-Hotel\Hotel.Web\bin\Debug\net6.0\Hotel.Common.pdb
+C:\Users\HP\source\repos\ASP-NET-Core-Hotel\Hotel.Web\bin\Debug\net6.0\Hotel.Data.dll
+C:\Users\HP\source\repos\ASP-NET-Core-Hotel\Hotel.Web\bin\Debug\net6.0\Hotel.Data.pdb
+C:\Users\HP\source\repos\ASP-NET-Core-Hotel\Hotel.Web\bin\Debug\net6.0\Hotel.Web.ViewModels.dll
+C:\Users\HP\source\repos\ASP-NET-Core-Hotel\Hotel.Web\bin\Debug\net6.0\Hotel.Web.ViewModels.pdb

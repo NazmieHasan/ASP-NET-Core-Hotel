@@ -3,7 +3,7 @@ namespace Hotel.Web
     using Microsoft.AspNetCore.Identity;
     using Microsoft.EntityFrameworkCore;
 
-    using Data;
+    using Hotel.Data;
 
     public class Program
     {

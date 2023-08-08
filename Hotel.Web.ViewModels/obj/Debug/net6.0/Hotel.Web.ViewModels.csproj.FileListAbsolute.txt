@@ -1,0 +1,15 @@
+C:\Users\HP\source\repos\ASP-NET-Core-Hotel\Hotel.Web.ViewModels\bin\Debug\net6.0\Hotel.Web.ViewModels.deps.json
+C:\Users\HP\source\repos\ASP-NET-Core-Hotel\Hotel.Web.ViewModels\bin\Debug\net6.0\Hotel.Web.ViewModels.dll
+C:\Users\HP\source\repos\ASP-NET-Core-Hotel\Hotel.Web.ViewModels\bin\Debug\net6.0\Hotel.Web.ViewModels.pdb
+C:\Users\HP\source\repos\ASP-NET-Core-Hotel\Hotel.Web.ViewModels\obj\Debug\net6.0\Hotel.Web.ViewModels.csproj.AssemblyReference.cache
+C:\Users\HP\source\repos\ASP-NET-Core-Hotel\Hotel.Web.ViewModels\obj\Debug\net6.0\Hotel.Web.ViewModels.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\HP\source\repos\ASP-NET-Core-Hotel\Hotel.Web.ViewModels\obj\Debug\net6.0\Hotel.Web.ViewModels.AssemblyInfoInputs.cache
+C:\Users\HP\source\repos\ASP-NET-Core-Hotel\Hotel.Web.ViewModels\obj\Debug\net6.0\Hotel.Web.ViewModels.AssemblyInfo.cs
+C:\Users\HP\source\repos\ASP-NET-Core-Hotel\Hotel.Web.ViewModels\obj\Debug\net6.0\Hotel.Web.ViewModels.csproj.CoreCompileInputs.cache
+C:\Users\HP\source\repos\ASP-NET-Core-Hotel\Hotel.Web.ViewModels\obj\Debug\net6.0\Hotel.Web.ViewModels.dll
+C:\Users\HP\source\repos\ASP-NET-Core-Hotel\Hotel.Web.ViewModels\obj\Debug\net6.0\refint\Hotel.Web.ViewModels.dll
+C:\Users\HP\source\repos\ASP-NET-Core-Hotel\Hotel.Web.ViewModels\obj\Debug\net6.0\Hotel.Web.ViewModels.pdb
+C:\Users\HP\source\repos\ASP-NET-Core-Hotel\Hotel.Web.ViewModels\obj\Debug\net6.0\ref\Hotel.Web.ViewModels.dll
+C:\Users\HP\source\repos\ASP-NET-Core-Hotel\Hotel.Web.ViewModels\bin\Debug\net6.0\Hotel.Common.dll
+C:\Users\HP\source\repos\ASP-NET-Core-Hotel\Hotel.Web.ViewModels\bin\Debug\net6.0\Hotel.Common.pdb
+C:\Users\HP\source\repos\ASP-NET-Core-Hotel\Hotel.Web.ViewModels\obj\Debug\net6.0\Hotel.Web.ViewModels.csproj.CopyComplete
