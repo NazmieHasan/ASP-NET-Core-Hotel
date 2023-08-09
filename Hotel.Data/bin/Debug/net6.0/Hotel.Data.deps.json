@@ -9,6 +9,7 @@
       "Hotel.Data/1.0.0": {
         "dependencies": {
           "Hotel.Common": "1.0.0",
+          "Hotel.Data.Models": "1.0.0",
           "Microsoft.AspNetCore.Identity.EntityFrameworkCore": "6.0.15",
           "Microsoft.EntityFrameworkCore.SqlServer": "6.0.15",
           "Microsoft.EntityFrameworkCore.Tools": "6.0.15"
@@ -551,6 +552,15 @@
         "runtime": {
           "Hotel.Common.dll": {}
         }
+      },
+      "Hotel.Data.Models/1.0.0": {
+        "dependencies": {
+          "Hotel.Common": "1.0.0",
+          "Microsoft.AspNetCore.Identity.EntityFrameworkCore": "6.0.15"
+        },
+        "runtime": {
+          "Hotel.Data.Models.dll": {}
+        }
       }
     }
   },
@@ -897,6 +907,11 @@
       "hashPath": "system.windows.extensions.4.7.0.nupkg.sha512"
     },
     "Hotel.Common/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    },
+    "Hotel.Data.Models/1.0.0": {
       "type": "project",
       "serviceable": false,
       "sha512": ""

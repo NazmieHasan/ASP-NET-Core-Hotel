@@ -10,6 +10,7 @@
         "dependencies": {
           "Hotel.Common": "1.0.0",
           "Hotel.Data": "1.0.0",
+          "Hotel.Data.Models": "1.0.0",
           "Hotel.Web.ViewModels": "1.0.0",
           "Microsoft.AspNetCore.Diagnostics.EntityFrameworkCore": "6.0.15",
           "Microsoft.AspNetCore.Identity.EntityFrameworkCore": "6.0.15",
@@ -554,11 +555,21 @@
       "Hotel.Data/1.0.0": {
         "dependencies": {
           "Hotel.Common": "1.0.0",
+          "Hotel.Data.Models": "1.0.0",
           "Microsoft.AspNetCore.Identity.EntityFrameworkCore": "6.0.15",
           "Microsoft.EntityFrameworkCore.SqlServer": "6.0.15"
         },
         "runtime": {
           "Hotel.Data.dll": {}
+        }
+      },
+      "Hotel.Data.Models/1.0.0": {
+        "dependencies": {
+          "Hotel.Common": "1.0.0",
+          "Microsoft.AspNetCore.Identity.EntityFrameworkCore": "6.0.15"
+        },
+        "runtime": {
+          "Hotel.Data.Models.dll": {}
         }
       },
       "Hotel.Web.ViewModels/1.0.0": {
@@ -947,6 +958,11 @@
       "sha512": ""
     },
     "Hotel.Data/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    },
+    "Hotel.Data.Models/1.0.0": {
       "type": "project",
       "serviceable": false,
       "sha512": ""

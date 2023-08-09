@@ -15,3 +15,5 @@ C:\Users\HP\source\repos\ASP-NET-Core-Hotel\Hotel.Data\obj\Debug\net6.0\ref\Hote
 C:\Users\HP\source\repos\ASP-NET-Core-Hotel\Hotel.Data\bin\Debug\net6.0\Hotel.Common.dll
 C:\Users\HP\source\repos\ASP-NET-Core-Hotel\Hotel.Data\bin\Debug\net6.0\Hotel.Common.pdb
 C:\Users\HP\source\repos\ASP-NET-Core-Hotel\Hotel.Data\obj\Debug\net6.0\Hotel.Data.csproj.CopyComplete
+C:\Users\HP\source\repos\ASP-NET-Core-Hotel\Hotel.Data\bin\Debug\net6.0\Hotel.Data.Models.dll
+C:\Users\HP\source\repos\ASP-NET-Core-Hotel\Hotel.Data\bin\Debug\net6.0\Hotel.Data.Models.pdb

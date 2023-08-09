@@ -874,6 +874,20 @@
         "runtime": {
           "bin/placeholder/Hotel.Common.dll": {}
         }
+      },
+      "Hotel.Data.Models/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v6.0",
+        "dependencies": {
+          "Hotel.Common": "1.0.0",
+          "Microsoft.AspNetCore.Identity.EntityFrameworkCore": "6.0.15"
+        },
+        "compile": {
+          "bin/placeholder/Hotel.Data.Models.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/Hotel.Data.Models.dll": {}
+        }
       }
     }
   },
@@ -2191,11 +2205,17 @@
       "type": "project",
       "path": "../Hotel.Common/Hotel.Common.csproj",
       "msbuildProject": "../Hotel.Common/Hotel.Common.csproj"
+    },
+    "Hotel.Data.Models/1.0.0": {
+      "type": "project",
+      "path": "../Hotel.Data.Models/Hotel.Data.Models.csproj",
+      "msbuildProject": "../Hotel.Data.Models/Hotel.Data.Models.csproj"
     }
   },
   "projectFileDependencyGroups": {
     "net6.0": [
       "Hotel.Common >= 1.0.0",
+      "Hotel.Data.Models >= 1.0.0",
       "Microsoft.AspNetCore.Identity.EntityFrameworkCore >= 6.0.15",
       "Microsoft.EntityFrameworkCore.SqlServer >= 6.0.15",
       "Microsoft.EntityFrameworkCore.Tools >= 6.0.15"
@@ -2230,6 +2250,9 @@
           "projectReferences": {
             "C:\\Users\\HP\\source\\repos\\ASP-NET-Core-Hotel\\Hotel.Common\\Hotel.Common.csproj": {
               "projectPath": "C:\\Users\\HP\\source\\repos\\ASP-NET-Core-Hotel\\Hotel.Common\\Hotel.Common.csproj"
+            },
+            "C:\\Users\\HP\\source\\repos\\ASP-NET-Core-Hotel\\Hotel.Data.Models\\Hotel.Data.Models.csproj": {
+              "projectPath": "C:\\Users\\HP\\source\\repos\\ASP-NET-Core-Hotel\\Hotel.Data.Models\\Hotel.Data.Models.csproj"
             }
           }
         }
