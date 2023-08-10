@@ -1,10 +1,10 @@
-﻿using System;
-using Microsoft.EntityFrameworkCore.Migrations;
-
-#nullable disable
+﻿#nullable disable
 
 namespace Hotel.Data.Migrations
 {
+
+    using System;
+    using Microsoft.EntityFrameworkCore.Migrations;
     public partial class InitializeDb : Migration
     {
         protected override void Up(MigrationBuilder migrationBuilder)
@@ -206,7 +206,7 @@ namespace Hotel.Data.Migrations
                         column: x => x.CategoryId,
                         principalTable: "Categories",
                         principalColumn: "Id",
-                        onDelete: ReferentialAction.Cascade);
+                        onDelete: ReferentialAction.Restrict);
                 });
 
             migrationBuilder.CreateIndex(

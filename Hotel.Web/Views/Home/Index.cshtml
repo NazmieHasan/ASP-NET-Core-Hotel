@@ -1,8 +1,22 @@
-﻿@{
+﻿@model IEnumerable<IndexViewModel>
+
+@{
     ViewData["Title"] = "Home Page";
+    var categories = Model.ToList();
 }
 
-<div class="text-center">
-    <h1 class="display-4">Welcome</h1>
-    <p>Learn about <a href="https://docs.microsoft.com/aspnet/core">building Web apps with ASP.NET Core</a>.</p>
+<h2 class="text-center">WELCOME</h2>
+<div class="row">
+    @if (categories.Any())
+    {
+        @foreach (var cat in Model)
+        {
+            <div class="col-md-4 col-sm-12">
+                <p><img class="mt-5 img-thumbnail border-0" src="@cat.ImageUrl" alt="@cat.Name"></p>
+                <h3>@cat.Name</h3>
+                <p class="mb-5">@cat.Description</p>
+                <a asp-controller="Booking" asp-action="Add" class="btn btn-danger btn-lg" role="button">Booking</a>
+            </div>
+        }
+    }
 </div>

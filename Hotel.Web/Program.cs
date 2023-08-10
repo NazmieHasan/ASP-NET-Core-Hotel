@@ -4,6 +4,8 @@ namespace Hotel.Web
 
     using Data;
     using Data.Models;
+    using Infrastructure.Extensions;
+    using Services.Data.Interfaces;
 
     public class Program
     {
@@ -19,9 +21,20 @@ namespace Hotel.Web
 
             builder.Services.AddDefaultIdentity<ApplicationUser>(options =>
             {
-                options.SignIn.RequireConfirmedAccount = true;
+                options.SignIn.RequireConfirmedAccount =
+                        builder.Configuration.GetValue<bool>("Identity:SignIn:RequireConfirmedAccount");
+                options.Password.RequireLowercase =
+                    builder.Configuration.GetValue<bool>("Identity:Password:RequireLowercase");
+                options.Password.RequireUppercase =
+                    builder.Configuration.GetValue<bool>("Identity:Password:RequireUppercase");
+                options.Password.RequireNonAlphanumeric =
+                    builder.Configuration.GetValue<bool>("Identity:Password:RequireNonAlphanumeric");
+                options.Password.RequiredLength =
+                    builder.Configuration.GetValue<int>("Identity:Password:RequiredLength");
             })
                 .AddEntityFrameworkStores<HotelDbContext>();
+
+            builder.Services.AddApplicationServices(typeof(ICategoryService));
 
             builder.Services.AddControllersWithViews();
 

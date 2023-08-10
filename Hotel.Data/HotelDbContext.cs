@@ -1,10 +1,10 @@
 ﻿namespace Hotel.Data
 {
+    using System.Reflection;
     using Microsoft.AspNetCore.Identity;
     using Microsoft.AspNetCore.Identity.EntityFrameworkCore;
     using Microsoft.EntityFrameworkCore;
 
-    using Configurations;
     using Models;
 
     public class HotelDbContext : IdentityDbContext<ApplicationUser, IdentityRole<Guid>, Guid>
@@ -20,10 +20,14 @@
 
         public DbSet<Booking> Bookings { get; set; } = null!;
 
-        //protected override void OnModelCreating(ModelBuilder builder)
-        //{
+        protected override void OnModelCreating(ModelBuilder builder)
+        {
+            Assembly configAssembly = Assembly.GetAssembly(typeof(HotelDbContext)) ??
+                                      Assembly.GetExecutingAssembly();
+            builder.ApplyConfigurationsFromAssembly(configAssembly);
 
-        //}
+            base.OnModelCreating(builder);
+        }
 
     }
 }

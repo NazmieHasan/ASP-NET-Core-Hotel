@@ -160,3 +160,8 @@ C:\Users\HP\source\repos\ASP-NET-Core-Hotel\Hotel.Web\bin\Debug\net6.0\Hotel.Web
 C:\Users\HP\source\repos\ASP-NET-Core-Hotel\Hotel.Web\bin\Debug\net6.0\Hotel.Web.ViewModels.pdb
 C:\Users\HP\source\repos\ASP-NET-Core-Hotel\Hotel.Web\bin\Debug\net6.0\Hotel.Data.Models.dll
 C:\Users\HP\source\repos\ASP-NET-Core-Hotel\Hotel.Web\bin\Debug\net6.0\Hotel.Data.Models.pdb
+C:\Users\HP\source\repos\ASP-NET-Core-Hotel\Hotel.Web\bin\Debug\net6.0\appsettings.Production.json
+C:\Users\HP\source\repos\ASP-NET-Core-Hotel\Hotel.Web\bin\Debug\net6.0\Hotel.Services.Data.dll
+C:\Users\HP\source\repos\ASP-NET-Core-Hotel\Hotel.Web\bin\Debug\net6.0\Hotel.Web.Infrastructure.dll
+C:\Users\HP\source\repos\ASP-NET-Core-Hotel\Hotel.Web\bin\Debug\net6.0\Hotel.Services.Data.pdb
+C:\Users\HP\source\repos\ASP-NET-Core-Hotel\Hotel.Web\bin\Debug\net6.0\Hotel.Web.Infrastructure.pdb

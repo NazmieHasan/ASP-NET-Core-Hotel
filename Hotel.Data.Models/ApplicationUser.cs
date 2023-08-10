@@ -5,9 +5,8 @@
     {
         public ApplicationUser()
         {
-            this.AllBookings = new HashSet<Booking>();
+            this.Id = Guid.NewGuid();
         }
 
-        public virtual ICollection<Booking> AllBookings { get; set; }
     }
 }

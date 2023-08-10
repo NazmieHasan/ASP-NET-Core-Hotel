@@ -19,6 +19,8 @@
     <ProjectReference Include="..\Hotel.Common\Hotel.Common.csproj" />
     <ProjectReference Include="..\Hotel.Data.Models\Hotel.Data.Models.csproj" />
     <ProjectReference Include="..\Hotel.Data\Hotel.Data.csproj" />
+    <ProjectReference Include="..\Hotel.Services.Data\Hotel.Services.Data.csproj" />
+    <ProjectReference Include="..\Hotel.Web.Infrastructure\Hotel.Web.Infrastructure.csproj" />
     <ProjectReference Include="..\Hotel.Web.ViewModels\Hotel.Web.ViewModels.csproj" />
   </ItemGroup>
 

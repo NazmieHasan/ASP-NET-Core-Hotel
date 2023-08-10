@@ -992,6 +992,35 @@
           "bin/placeholder/Hotel.Data.Models.dll": {}
         }
       },
+      "Hotel.Services.Data/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v6.0",
+        "dependencies": {
+          "Hotel.Common": "1.0.0",
+          "Hotel.Data": "1.0.0",
+          "Hotel.Data.Models": "1.0.0",
+          "Hotel.Web.ViewModels": "1.0.0"
+        },
+        "compile": {
+          "bin/placeholder/Hotel.Services.Data.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/Hotel.Services.Data.dll": {}
+        }
+      },
+      "Hotel.Web.Infrastructure/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v6.0",
+        "dependencies": {
+          "Hotel.Services.Data": "1.0.0"
+        },
+        "compile": {
+          "bin/placeholder/Hotel.Web.Infrastructure.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/Hotel.Web.Infrastructure.dll": {}
+        }
+      },
       "Hotel.Web.ViewModels/1.0.0": {
         "type": "project",
         "framework": ".NETCoreApp,Version=v6.0",
@@ -2511,6 +2540,16 @@
       "path": "../Hotel.Data.Models/Hotel.Data.Models.csproj",
       "msbuildProject": "../Hotel.Data.Models/Hotel.Data.Models.csproj"
     },
+    "Hotel.Services.Data/1.0.0": {
+      "type": "project",
+      "path": "../Hotel.Services.Data/Hotel.Services.Data.csproj",
+      "msbuildProject": "../Hotel.Services.Data/Hotel.Services.Data.csproj"
+    },
+    "Hotel.Web.Infrastructure/1.0.0": {
+      "type": "project",
+      "path": "../Hotel.Web.Infrastructure/Hotel.Web.Infrastructure.csproj",
+      "msbuildProject": "../Hotel.Web.Infrastructure/Hotel.Web.Infrastructure.csproj"
+    },
     "Hotel.Web.ViewModels/1.0.0": {
       "type": "project",
       "path": "../Hotel.Web.ViewModels/Hotel.Web.ViewModels.csproj",
@@ -2522,6 +2561,8 @@
       "Hotel.Common >= 1.0.0",
       "Hotel.Data >= 1.0.0",
       "Hotel.Data.Models >= 1.0.0",
+      "Hotel.Services.Data >= 1.0.0",
+      "Hotel.Web.Infrastructure >= 1.0.0",
       "Hotel.Web.ViewModels >= 1.0.0",
       "Microsoft.AspNetCore.Diagnostics.EntityFrameworkCore >= 6.0.15",
       "Microsoft.AspNetCore.Identity.EntityFrameworkCore >= 6.0.15",
@@ -2565,6 +2606,12 @@
             },
             "C:\\Users\\HP\\source\\repos\\ASP-NET-Core-Hotel\\Hotel.Data\\Hotel.Data.csproj": {
               "projectPath": "C:\\Users\\HP\\source\\repos\\ASP-NET-Core-Hotel\\Hotel.Data\\Hotel.Data.csproj"
+            },
+            "C:\\Users\\HP\\source\\repos\\ASP-NET-Core-Hotel\\Hotel.Services.Data\\Hotel.Services.Data.csproj": {
+              "projectPath": "C:\\Users\\HP\\source\\repos\\ASP-NET-Core-Hotel\\Hotel.Services.Data\\Hotel.Services.Data.csproj"
+            },
+            "C:\\Users\\HP\\source\\repos\\ASP-NET-Core-Hotel\\Hotel.Web.Infrastructure\\Hotel.Web.Infrastructure.csproj": {
+              "projectPath": "C:\\Users\\HP\\source\\repos\\ASP-NET-Core-Hotel\\Hotel.Web.Infrastructure\\Hotel.Web.Infrastructure.csproj"
             },
             "C:\\Users\\HP\\source\\repos\\ASP-NET-Core-Hotel\\Hotel.Web.ViewModels\\Hotel.Web.ViewModels.csproj": {
               "projectPath": "C:\\Users\\HP\\source\\repos\\ASP-NET-Core-Hotel\\Hotel.Web.ViewModels\\Hotel.Web.ViewModels.csproj"
