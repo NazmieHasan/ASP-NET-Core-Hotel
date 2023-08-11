@@ -91,17 +91,21 @@
             return allUserBookings;
         }
 
-        public async Task<BookingDetailsViewModel?> GetDetailsByIdAsync(string bookingId)
+        public async Task<bool> ExistsByIdAsync(string bookingId)
         {
-            Booking? booking = await this.dbContext
+            bool result = await this.dbContext
+                .Bookings
+                .AnyAsync(b => b.Id.ToString() == bookingId);
+
+            return result;
+        }
+
+        public async Task<BookingDetailsViewModel> GetDetailsByIdAsync(string bookingId)
+        {
+            Booking booking = await this.dbContext
                 .Bookings
                 .Include(u => u.User)
-                .FirstOrDefaultAsync(b => b.Id.ToString() == bookingId);
-
-            if (booking == null)
-            {
-                return null;
-            }
+                .FirstAsync(b => b.Id.ToString() == bookingId);
 
             return new BookingDetailsViewModel
             {
@@ -112,7 +116,19 @@
                     Email = booking.User.Email
                 }
             };
-
         }
+
+        public async Task<CreateBookingFormModel> GetBookingForEditByIdAsync(string bookingId)
+        {
+            Booking booking = await this.dbContext
+                .Bookings
+                .FirstAsync(b => b.Id.ToString() == bookingId);
+
+            return new CreateBookingFormModel
+            {
+                PhoneNumber = booking.PhoneNumber
+            };
+        }
+
     }
 }

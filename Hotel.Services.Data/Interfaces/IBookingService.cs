@@ -11,6 +11,10 @@
 
         Task<IEnumerable<BookingAllViewModel>> AllByUserIdAsync(string userId);
 
-        Task<BookingDetailsViewModel?> GetDetailsByIdAsync(string bookingId);
+        Task<bool> ExistsByIdAsync(string bookingId);
+
+        Task<BookingDetailsViewModel> GetDetailsByIdAsync(string bookingId);
+
+        Task<CreateBookingFormModel> GetBookingForEditByIdAsync(string bookingId);
     }
 }

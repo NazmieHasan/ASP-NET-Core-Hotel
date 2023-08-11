@@ -50,12 +50,16 @@
         [HttpGet]
         public async Task<IActionResult> Details(string id)
         {
-            BookingDetailsViewModel? viewModel = await this.bookingService
-                .GetDetailsByIdAsync(id);
-            if (viewModel == null)
+            bool bookingExists = await this.bookingService
+               .ExistsByIdAsync(id);
+
+            if (!bookingExists)
             {
                 return this.RedirectToAction("Index", "Home");
             }
+
+            BookingDetailsViewModel viewModel = await this.bookingService
+                .GetDetailsByIdAsync(id);
 
             return View(viewModel);
         }
