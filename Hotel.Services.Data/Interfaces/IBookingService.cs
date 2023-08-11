@@ -8,5 +8,7 @@
         Task Create(string userId, CreateBookingFormModel model);
 
         Task<AllBookinsFilteredAndPagedServiceModel> AllAsync(AllBookingsQueryModel queryModel);
+
+        Task<IEnumerable<BookingAllViewModel>> AllByUserIdAsync(string userId);
     }
 }

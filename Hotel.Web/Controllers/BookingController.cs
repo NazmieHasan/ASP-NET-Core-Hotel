@@ -59,5 +59,17 @@
             return this.View(queryModel);
         }
 
+        [HttpGet]
+        public async Task<IActionResult> Mine()
+        {
+            List<BookingAllViewModel> myBookings =
+                new List<BookingAllViewModel>();
+
+            string userId = this.User.GetId()!;
+            myBookings.AddRange(await this.bookingService.AllByUserIdAsync(userId));
+            
+            return this.View(myBookings);
+        }
+
     }
 }

@@ -74,5 +74,20 @@
             await this.dbContext.Bookings.AddAsync(newBooking);
             await this.dbContext.SaveChangesAsync();
         }
+
+        public async Task<IEnumerable<BookingAllViewModel>> AllByUserIdAsync(string userId)
+        {
+            IEnumerable<BookingAllViewModel> allUserBookings = await this.dbContext
+                .Bookings
+                .Where(b => b.UserId.ToString() == userId)
+                .Select(b => new BookingAllViewModel
+                {
+                    Id = b.Id.ToString(),
+                    PhoneNumber = b.PhoneNumber
+                })
+                .ToArrayAsync();
+
+            return allUserBookings;
+        }
     }
 }
