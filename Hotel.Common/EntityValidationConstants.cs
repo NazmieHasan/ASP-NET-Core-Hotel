@@ -10,13 +10,19 @@
             public const int DescriptionMinLength = 50;
             public const int DescriptionMaxLength = 500;
 
-            public const string BedsMinValue = "1";
-            public const string BedsMaxValue = "10";
+            public const int BedsMinValue = 1;
+            public const int BedsMaxValue = 10;
 
             public const string PriceMinValue = "0";
             public const string PriceMaxValue = "2000";
 
             public const int ImageUrlMaxLength = 2048;
+        }
+
+        public static class Room
+        {
+            public const int NumberMinValue = 201;
+            public const int NumberMaxValue = 1000;
         }
 
         public class Booking
