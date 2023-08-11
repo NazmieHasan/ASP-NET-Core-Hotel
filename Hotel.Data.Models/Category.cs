@@ -32,6 +32,8 @@
         [MaxLength(ImageUrlMaxLength)]
         public string ImageUrl { get; set; } = null!;
 
+        public bool IsActive { get; set; }
+
         public virtual ICollection<Room> Rooms { get; set; }
 
     }

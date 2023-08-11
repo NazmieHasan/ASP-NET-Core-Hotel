@@ -36,6 +36,7 @@
         {
             IEnumerable<IndexViewModel> all = await this.dbContext
                 .Categories
+                .Where(c => c.IsActive)
                 .Select(c => new IndexViewModel()
                 {
                     Id = c.Id,
