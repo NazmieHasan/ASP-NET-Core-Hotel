@@ -6,6 +6,7 @@
     using Hotel.Data.Models;
     using Interfaces;
     using Web.ViewModels.Home;
+    using Web.ViewModels.Category;
 
     public class CategoryService : ICategoryService
     {
@@ -30,6 +31,21 @@
                 .ToArrayAsync();
 
             return all;
+        }
+
+        public async Task<IEnumerable<RoomSelectCategoryFormModel>> AllCategoriesAsync()
+        {
+            IEnumerable<RoomSelectCategoryFormModel> allCategories = await this.dbContext
+                .Categories
+                .AsNoTracking()
+                .Select(c => new RoomSelectCategoryFormModel()
+                {
+                    Id = c.Id,
+                    Name = c.Name,
+                })
+                .ToArrayAsync();
+
+            return allCategories;
         }
     }
 }
