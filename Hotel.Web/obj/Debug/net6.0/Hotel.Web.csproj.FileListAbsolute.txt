@@ -165,3 +165,13 @@ C:\Users\HP\source\repos\ASP-NET-Core-Hotel\Hotel.Web\bin\Debug\net6.0\Hotel.Ser
 C:\Users\HP\source\repos\ASP-NET-Core-Hotel\Hotel.Web\bin\Debug\net6.0\Hotel.Web.Infrastructure.dll
 C:\Users\HP\source\repos\ASP-NET-Core-Hotel\Hotel.Web\bin\Debug\net6.0\Hotel.Services.Data.pdb
 C:\Users\HP\source\repos\ASP-NET-Core-Hotel\Hotel.Web\bin\Debug\net6.0\Hotel.Web.Infrastructure.pdb
+C:\Users\HP\source\repos\ASP-NET-Core-Hotel\Hotel.Web\bin\Debug\net6.0\Microsoft.AspNetCore.JsonPatch.dll
+C:\Users\HP\source\repos\ASP-NET-Core-Hotel\Hotel.Web\bin\Debug\net6.0\Microsoft.AspNetCore.Mvc.Razor.Extensions.dll
+C:\Users\HP\source\repos\ASP-NET-Core-Hotel\Hotel.Web\bin\Debug\net6.0\Microsoft.AspNetCore.Razor.Language.dll
+C:\Users\HP\source\repos\ASP-NET-Core-Hotel\Hotel.Web\bin\Debug\net6.0\Microsoft.CodeAnalysis.dll
+C:\Users\HP\source\repos\ASP-NET-Core-Hotel\Hotel.Web\bin\Debug\net6.0\Microsoft.CodeAnalysis.CSharp.dll
+C:\Users\HP\source\repos\ASP-NET-Core-Hotel\Hotel.Web\bin\Debug\net6.0\Microsoft.CodeAnalysis.Razor.dll
+C:\Users\HP\source\repos\ASP-NET-Core-Hotel\Hotel.Web\bin\Debug\net6.0\Microsoft.DotNet.PlatformAbstractions.dll
+C:\Users\HP\source\repos\ASP-NET-Core-Hotel\Hotel.Web\bin\Debug\net6.0\Microsoft.Extensions.DependencyModel.dll
+C:\Users\HP\source\repos\ASP-NET-Core-Hotel\Hotel.Web\bin\Debug\net6.0\Newtonsoft.Json.dll
+C:\Users\HP\source\repos\ASP-NET-Core-Hotel\Hotel.Web\bin\Debug\net6.0\Newtonsoft.Json.Bson.dll

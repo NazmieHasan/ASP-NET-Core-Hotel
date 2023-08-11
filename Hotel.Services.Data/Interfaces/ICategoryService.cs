@@ -5,8 +5,12 @@
 
     public interface ICategoryService
     {
+        Task Create(CategoryFormModel formModel);
+
         Task<IEnumerable<IndexViewModel>> AllAsync();
 
         Task<IEnumerable<RoomSelectCategoryFormModel>> AllCategoriesAsync();
+
+        Task<bool> ExistsByIdAsync(int id);
     }
 }

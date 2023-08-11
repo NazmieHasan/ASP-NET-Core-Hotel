@@ -12,6 +12,7 @@
         [Key]
         public Guid Id { get; set; }
 
+        [Required]
         public int Number { get; set; }
 
         public int CategoryId { get; set; }

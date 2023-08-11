@@ -22,8 +22,10 @@
         [MaxLength(DescriptionMaxLength)]
         public string Description { get; set; } = null!;
 
+        [Required]
         public int Beds { get; set; }
 
+        [Required]
         public decimal Price { get; set; }
 
         [Required]

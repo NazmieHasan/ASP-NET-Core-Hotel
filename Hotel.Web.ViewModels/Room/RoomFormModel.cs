@@ -15,7 +15,6 @@
 
         [Required]
         [Range(NumberMinValue, NumberMaxValue)]
-        [Phone]
         [Display(Name = "Number")]
         public int Number { get; set; }
 

@@ -1,6 +1,6 @@
 {
   "Version": 1,
-  "Hash": "Uuo6wR7b456yPIwKlPYovx3o3xIYwqwzg4noulLfcCA=",
+  "Hash": "YUUcklBZl8JaKvAl8NL1cbdRxaJEW8Fh4+rH8h4yKtc=",
   "Source": "Hotel.Web",
   "BasePath": "_content/Hotel.Web",
   "Mode": "Default",
@@ -1103,6 +1103,23 @@
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "wwwroot\\favicon.ico"
+    },
+    {
+      "Identity": "C:\\Users\\HP\\source\\repos\\ASP-NET-Core-Hotel\\Hotel.Web\\wwwroot\\js\\jquery-override.js",
+      "SourceId": "Hotel.Web",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\HP\\source\\repos\\ASP-NET-Core-Hotel\\Hotel.Web\\wwwroot\\",
+      "BasePath": "_content/Hotel.Web",
+      "RelativePath": "js/jquery-override.js",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\js\\jquery-override.js"
     },
     {
       "Identity": "C:\\Users\\HP\\source\\repos\\ASP-NET-Core-Hotel\\Hotel.Web\\wwwroot\\js\\site.js",

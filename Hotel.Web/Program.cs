@@ -5,6 +5,7 @@ namespace Hotel.Web
     using Data;
     using Data.Models;
     using Infrastructure.Extensions;
+    using Infrastructure.ModelBinders;
     using Services.Data.Interfaces;
 
     public class Program
@@ -36,7 +37,12 @@ namespace Hotel.Web
 
             builder.Services.AddApplicationServices(typeof(ICategoryService));
 
-            builder.Services.AddControllersWithViews();
+            builder.Services
+                .AddControllersWithViews()
+                .AddMvcOptions(options =>
+                {
+                    options.ModelBinderProviders.Insert(0, new DecimalModelBinderProvider());
+                });
 
             WebApplication app = builder.Build();
 
