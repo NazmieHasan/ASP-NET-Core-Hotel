@@ -1,0 +1,31 @@
+﻿@model BookingDetailsViewModel
+
+@{
+    ViewBag.Title = "Booking Details";
+}
+
+<h2 class="text-center">@ViewBag.Title</h2>
+<hr />
+
+<div class="container" style="display:inline">
+    <div class="row">
+       
+        <div class="card col-8 border-0">
+            <p>@Model.Id</p>
+            <h5>User Info</h5>
+            <p>Email:  @Model.User.Email</p>
+            <p>Phone Number: @Model.PhoneNumber</p>
+
+            <div class="form-inline">
+                @if (this.User.Identity?.IsAuthenticated ?? false)
+                {
+                    <a class="btn btn-warning" asp-controller="Booking" asp-action="Edit"
+                   asp-route-id="@Model.Id">Edit</a>
+                    <a class="ml-2 btn btn-danger" asp-controller="Booking" asp-action="Delete"
+                       asp-route-id="@Model.Id">Delete</a>
+                }
+            </div>
+           
+        </div>
+    </div>
+</div>

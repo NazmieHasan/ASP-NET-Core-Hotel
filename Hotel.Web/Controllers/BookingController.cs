@@ -48,6 +48,19 @@
         }
 
         [HttpGet]
+        public async Task<IActionResult> Details(string id)
+        {
+            BookingDetailsViewModel? viewModel = await this.bookingService
+                .GetDetailsByIdAsync(id);
+            if (viewModel == null)
+            {
+                return this.RedirectToAction("Index", "Home");
+            }
+
+            return View(viewModel);
+        }
+
+        [HttpGet]
         public async Task<IActionResult> All([FromQuery] AllBookingsQueryModel queryModel)
         {
             AllBookinsFilteredAndPagedServiceModel serviceModel =

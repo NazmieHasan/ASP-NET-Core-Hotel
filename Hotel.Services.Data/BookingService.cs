@@ -8,6 +8,7 @@
     using Models.Booking;
     using Web.ViewModels.Booking;
     using Web.ViewModels.Booking.Enums;
+    using Web.ViewModels.User;
 
     public class BookingService : IBookingService
     {
@@ -88,6 +89,30 @@
                 .ToArrayAsync();
 
             return allUserBookings;
+        }
+
+        public async Task<BookingDetailsViewModel?> GetDetailsByIdAsync(string bookingId)
+        {
+            Booking? booking = await this.dbContext
+                .Bookings
+                .Include(u => u.User)
+                .FirstOrDefaultAsync(b => b.Id.ToString() == bookingId);
+
+            if (booking == null)
+            {
+                return null;
+            }
+
+            return new BookingDetailsViewModel
+            {
+                Id = booking.Id.ToString(),
+                PhoneNumber = booking.PhoneNumber,
+                User = new UserInfoOnBookingViewModel()
+                {
+                    Email = booking.User.Email
+                }
+            };
+
         }
     }
 }

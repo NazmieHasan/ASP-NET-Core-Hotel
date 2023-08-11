@@ -10,5 +10,7 @@
         Task<AllBookinsFilteredAndPagedServiceModel> AllAsync(AllBookingsQueryModel queryModel);
 
         Task<IEnumerable<BookingAllViewModel>> AllByUserIdAsync(string userId);
+
+        Task<BookingDetailsViewModel?> GetDetailsByIdAsync(string bookingId);
     }
 }

@@ -5,6 +5,8 @@
         <div class="text-center">
             <h4>@Model.Id</h4>
             <h4>@Model.PhoneNumber</h4>
+            <a class="btn btn-warning" asp-controller="Booking" asp-action="Details"
+               asp-route-id="@Model.Id">Details</a>
         </div>
     </div>
 </div>
