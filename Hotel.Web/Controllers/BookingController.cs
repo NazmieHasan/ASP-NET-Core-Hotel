@@ -5,6 +5,7 @@
 
     using Infrastructure.Extensions;
     using Services.Data.Interfaces;
+    using Services.Data.Models.Booking;
     using ViewModels.Booking;
     using Hotel.Web.Infrastructure.Extentions;
 
@@ -44,6 +45,18 @@
             }
 
             return this.RedirectToAction("Index", "Home");
+        }
+
+        [HttpGet]
+        public async Task<IActionResult> All([FromQuery] AllBookingsQueryModel queryModel)
+        {
+            AllBookinsFilteredAndPagedServiceModel serviceModel =
+                await this.bookingService.AllAsync(queryModel);
+
+            queryModel.Bookings = serviceModel.Bookings;
+            queryModel.TotalBookings = serviceModel.TotalBookingsCount;
+
+            return this.View(queryModel);
         }
 
     }

@@ -19,3 +19,5 @@ C:\Users\HP\source\repos\ASP-NET-Core-Hotel\Hotel.Services.Data\obj\Debug\net6.0
 C:\Users\HP\source\repos\ASP-NET-Core-Hotel\Hotel.Services.Data\obj\Debug\net6.0\refint\Hotel.Services.Data.dll
 C:\Users\HP\source\repos\ASP-NET-Core-Hotel\Hotel.Services.Data\obj\Debug\net6.0\Hotel.Services.Data.pdb
 C:\Users\HP\source\repos\ASP-NET-Core-Hotel\Hotel.Services.Data\obj\Debug\net6.0\ref\Hotel.Services.Data.dll
+C:\Users\HP\source\repos\ASP-NET-Core-Hotel\Hotel.Services.Data\bin\Debug\net6.0\Hotel.Services.Data.Models.dll
+C:\Users\HP\source\repos\ASP-NET-Core-Hotel\Hotel.Services.Data\bin\Debug\net6.0\Hotel.Services.Data.Models.pdb

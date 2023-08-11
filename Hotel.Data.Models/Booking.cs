@@ -20,6 +20,8 @@
 
         public Guid UserId { get; set; }
 
+        public DateTime CreatedOn { get; set; }
+
         public virtual ApplicationUser User { get; set; } = null!;
     }
 }

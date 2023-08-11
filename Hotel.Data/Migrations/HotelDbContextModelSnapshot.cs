@@ -94,6 +94,11 @@ namespace Hotel.Data.Migrations
                         .ValueGeneratedOnAdd()
                         .HasColumnType("uniqueidentifier");
 
+                    b.Property<DateTime>("CreatedOn")
+                        .ValueGeneratedOnAdd()
+                        .HasColumnType("datetime2")
+                        .HasDefaultValueSql("GETDATE()");
+
                     b.Property<string>("PhoneNumber")
                         .IsRequired()
                         .HasMaxLength(15)
@@ -220,31 +225,31 @@ namespace Hotel.Data.Migrations
                     b.HasData(
                         new
                         {
-                            Id = new Guid("1e45e862-1ea1-4746-8cdb-d9a1082bc076"),
+                            Id = new Guid("613df3a4-35c5-44f0-85dc-b55aa90ead7c"),
                             CategoryId = 1,
                             Number = 201
                         },
                         new
                         {
-                            Id = new Guid("8db70da9-1b3f-4d27-8d92-348745d3b4de"),
+                            Id = new Guid("c862d950-ad11-40f2-b3be-a1ce3923a38a"),
                             CategoryId = 1,
                             Number = 202
                         },
                         new
                         {
-                            Id = new Guid("83d2dcc3-4ac2-4bbc-bbf4-7277f56c8cf7"),
+                            Id = new Guid("dd081e71-d9e1-45e6-b3a3-05595b45b1c2"),
                             CategoryId = 1,
                             Number = 203
                         },
                         new
                         {
-                            Id = new Guid("26bb46a2-eded-4754-b132-d20811a007ca"),
+                            Id = new Guid("27fa74d1-10c8-4ac5-a237-538e89866076"),
                             CategoryId = 1,
                             Number = 204
                         },
                         new
                         {
-                            Id = new Guid("c8477b3b-5d19-4880-a654-6f5fb7051f3d"),
+                            Id = new Guid("77928bb7-cabf-4ebd-a57f-368e631f7e09"),
                             CategoryId = 1,
                             Number = 205
                         });

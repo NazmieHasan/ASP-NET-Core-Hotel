@@ -1,0 +1,17 @@
+C:\Users\HP\source\repos\ASP-NET-Core-Hotel\Hotel.Services.Data.Models\bin\Debug\net6.0\Hotel.Services.Data.Models.deps.json
+C:\Users\HP\source\repos\ASP-NET-Core-Hotel\Hotel.Services.Data.Models\bin\Debug\net6.0\Hotel.Services.Data.Models.dll
+C:\Users\HP\source\repos\ASP-NET-Core-Hotel\Hotel.Services.Data.Models\bin\Debug\net6.0\Hotel.Services.Data.Models.pdb
+C:\Users\HP\source\repos\ASP-NET-Core-Hotel\Hotel.Services.Data.Models\bin\Debug\net6.0\Hotel.Common.dll
+C:\Users\HP\source\repos\ASP-NET-Core-Hotel\Hotel.Services.Data.Models\bin\Debug\net6.0\Hotel.Web.ViewModels.dll
+C:\Users\HP\source\repos\ASP-NET-Core-Hotel\Hotel.Services.Data.Models\bin\Debug\net6.0\Hotel.Web.ViewModels.pdb
+C:\Users\HP\source\repos\ASP-NET-Core-Hotel\Hotel.Services.Data.Models\bin\Debug\net6.0\Hotel.Common.pdb
+C:\Users\HP\source\repos\ASP-NET-Core-Hotel\Hotel.Services.Data.Models\obj\Debug\net6.0\Hotel.Services.Data.Models.csproj.AssemblyReference.cache
+C:\Users\HP\source\repos\ASP-NET-Core-Hotel\Hotel.Services.Data.Models\obj\Debug\net6.0\Hotel.Services.Data.Models.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\HP\source\repos\ASP-NET-Core-Hotel\Hotel.Services.Data.Models\obj\Debug\net6.0\Hotel.Services.Data.Models.AssemblyInfoInputs.cache
+C:\Users\HP\source\repos\ASP-NET-Core-Hotel\Hotel.Services.Data.Models\obj\Debug\net6.0\Hotel.Services.Data.Models.AssemblyInfo.cs
+C:\Users\HP\source\repos\ASP-NET-Core-Hotel\Hotel.Services.Data.Models\obj\Debug\net6.0\Hotel.Services.Data.Models.csproj.CoreCompileInputs.cache
+C:\Users\HP\source\repos\ASP-NET-Core-Hotel\Hotel.Services.Data.Models\obj\Debug\net6.0\Hotel.Services.Data.Models.csproj.CopyComplete
+C:\Users\HP\source\repos\ASP-NET-Core-Hotel\Hotel.Services.Data.Models\obj\Debug\net6.0\Hotel.Services.Data.Models.dll
+C:\Users\HP\source\repos\ASP-NET-Core-Hotel\Hotel.Services.Data.Models\obj\Debug\net6.0\refint\Hotel.Services.Data.Models.dll
+C:\Users\HP\source\repos\ASP-NET-Core-Hotel\Hotel.Services.Data.Models\obj\Debug\net6.0\Hotel.Services.Data.Models.pdb
+C:\Users\HP\source\repos\ASP-NET-Core-Hotel\Hotel.Services.Data.Models\obj\Debug\net6.0\ref\Hotel.Services.Data.Models.dll

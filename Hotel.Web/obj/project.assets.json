@@ -3478,6 +3478,7 @@
           "Hotel.Common": "1.0.0",
           "Hotel.Data": "1.0.0",
           "Hotel.Data.Models": "1.0.0",
+          "Hotel.Services.Data.Models": "1.0.0",
           "Hotel.Web.ViewModels": "1.0.0"
         },
         "compile": {
@@ -3485,6 +3486,19 @@
         },
         "runtime": {
           "bin/placeholder/Hotel.Services.Data.dll": {}
+        }
+      },
+      "Hotel.Services.Data.Models/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v6.0",
+        "dependencies": {
+          "Hotel.Web.ViewModels": "1.0.0"
+        },
+        "compile": {
+          "bin/placeholder/Hotel.Services.Data.Models.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/Hotel.Services.Data.Models.dll": {}
         }
       },
       "Hotel.Web.Infrastructure/1.0.0": {
@@ -9610,6 +9624,11 @@
       "path": "../Hotel.Services.Data/Hotel.Services.Data.csproj",
       "msbuildProject": "../Hotel.Services.Data/Hotel.Services.Data.csproj"
     },
+    "Hotel.Services.Data.Models/1.0.0": {
+      "type": "project",
+      "path": "../Hotel.Services.Data.Models/Hotel.Services.Data.Models.csproj",
+      "msbuildProject": "../Hotel.Services.Data.Models/Hotel.Services.Data.Models.csproj"
+    },
     "Hotel.Web.Infrastructure/1.0.0": {
       "type": "project",
       "path": "../Hotel.Web.Infrastructure/Hotel.Web.Infrastructure.csproj",
@@ -9627,6 +9646,7 @@
       "Hotel.Data >= 1.0.0",
       "Hotel.Data.Models >= 1.0.0",
       "Hotel.Services.Data >= 1.0.0",
+      "Hotel.Services.Data.Models >= 1.0.0",
       "Hotel.Web.Infrastructure >= 1.0.0",
       "Hotel.Web.ViewModels >= 1.0.0",
       "Microsoft.AspNetCore.Diagnostics.EntityFrameworkCore >= 6.0.15",
@@ -9671,6 +9691,9 @@
             },
             "C:\\Users\\HP\\source\\repos\\ASP-NET-Core-Hotel\\Hotel.Data\\Hotel.Data.csproj": {
               "projectPath": "C:\\Users\\HP\\source\\repos\\ASP-NET-Core-Hotel\\Hotel.Data\\Hotel.Data.csproj"
+            },
+            "C:\\Users\\HP\\source\\repos\\ASP-NET-Core-Hotel\\Hotel.Services.Data.Models\\Hotel.Services.Data.Models.csproj": {
+              "projectPath": "C:\\Users\\HP\\source\\repos\\ASP-NET-Core-Hotel\\Hotel.Services.Data.Models\\Hotel.Services.Data.Models.csproj"
             },
             "C:\\Users\\HP\\source\\repos\\ASP-NET-Core-Hotel\\Hotel.Services.Data\\Hotel.Services.Data.csproj": {
               "projectPath": "C:\\Users\\HP\\source\\repos\\ASP-NET-Core-Hotel\\Hotel.Services.Data\\Hotel.Services.Data.csproj"

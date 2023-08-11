@@ -1,0 +1,49 @@
+{
+  "runtimeTarget": {
+    "name": ".NETCoreApp,Version=v6.0",
+    "signature": ""
+  },
+  "compilationOptions": {},
+  "targets": {
+    ".NETCoreApp,Version=v6.0": {
+      "Hotel.Services.Data.Models/1.0.0": {
+        "dependencies": {
+          "Hotel.Web.ViewModels": "1.0.0"
+        },
+        "runtime": {
+          "Hotel.Services.Data.Models.dll": {}
+        }
+      },
+      "Hotel.Common/1.0.0": {
+        "runtime": {
+          "Hotel.Common.dll": {}
+        }
+      },
+      "Hotel.Web.ViewModels/1.0.0": {
+        "dependencies": {
+          "Hotel.Common": "1.0.0"
+        },
+        "runtime": {
+          "Hotel.Web.ViewModels.dll": {}
+        }
+      }
+    }
+  },
+  "libraries": {
+    "Hotel.Services.Data.Models/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    },
+    "Hotel.Common/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    },
+    "Hotel.Web.ViewModels/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    }
+  }
+}

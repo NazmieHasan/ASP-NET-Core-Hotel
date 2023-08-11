@@ -5,7 +5,9 @@
     using Hotel.Data;
     using Hotel.Data.Models;
     using Interfaces;
+    using Models.Booking;
     using Web.ViewModels.Booking;
+    using Web.ViewModels.Booking.Enums;
 
     public class BookingService : IBookingService
     {
@@ -16,6 +18,50 @@
             this.dbContext = dbContext;
         }
 
+        public async Task<AllBookinsFilteredAndPagedServiceModel> AllAsync(AllBookingsQueryModel queryModel)
+        {
+            IQueryable<Booking> bookingsQuery = this.dbContext
+                            .Bookings
+                            .AsQueryable();
+
+            if (!string.IsNullOrWhiteSpace(queryModel.PhoneNumber))
+            {
+                string wildCard = $"%{queryModel.PhoneNumber}%";
+
+                bookingsQuery = bookingsQuery
+                    .Where(b => EF.Functions.Like(b.PhoneNumber, wildCard));
+            }
+
+            bookingsQuery = queryModel.BookingSort switch
+            {
+                BookingSort.Newest => bookingsQuery
+                    .OrderByDescending(b => b.CreatedOn),
+                BookingSort.Oldest => bookingsQuery
+                    .OrderBy(b => b.CreatedOn),
+                _ => bookingsQuery
+                    .OrderBy(b => b.Id)
+                    .ThenByDescending(b => b.CreatedOn)
+            };
+
+            IEnumerable<BookingAllViewModel> allBookings = await bookingsQuery
+                .Skip((queryModel.CurrentPage - 1) * queryModel.BookingsPerPage)
+                .Take(queryModel.BookingsPerPage)
+                .Select(b => new BookingAllViewModel
+                {
+                    Id = b.Id.ToString(),
+                    PhoneNumber = b.PhoneNumber
+                })
+                .ToArrayAsync();
+
+            int totalBookings = bookingsQuery.Count();
+
+            return new AllBookinsFilteredAndPagedServiceModel()
+            {
+                TotalBookingsCount = totalBookings,
+                Bookings = allBookings
+            };
+
+        }
 
         public async Task Create(string userId, CreateBookingFormModel model)
         {

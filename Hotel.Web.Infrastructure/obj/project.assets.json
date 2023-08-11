@@ -3363,6 +3363,7 @@
           "Hotel.Common": "1.0.0",
           "Hotel.Data": "1.0.0",
           "Hotel.Data.Models": "1.0.0",
+          "Hotel.Services.Data.Models": "1.0.0",
           "Hotel.Web.ViewModels": "1.0.0"
         },
         "compile": {
@@ -3370,6 +3371,19 @@
         },
         "runtime": {
           "bin/placeholder/Hotel.Services.Data.dll": {}
+        }
+      },
+      "Hotel.Services.Data.Models/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v6.0",
+        "dependencies": {
+          "Hotel.Web.ViewModels": "1.0.0"
+        },
+        "compile": {
+          "bin/placeholder/Hotel.Services.Data.Models.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/Hotel.Services.Data.Models.dll": {}
         }
       },
       "Hotel.Web.ViewModels/1.0.0": {
@@ -9258,6 +9272,11 @@
       "type": "project",
       "path": "../Hotel.Services.Data/Hotel.Services.Data.csproj",
       "msbuildProject": "../Hotel.Services.Data/Hotel.Services.Data.csproj"
+    },
+    "Hotel.Services.Data.Models/1.0.0": {
+      "type": "project",
+      "path": "../Hotel.Services.Data.Models/Hotel.Services.Data.Models.csproj",
+      "msbuildProject": "../Hotel.Services.Data.Models/Hotel.Services.Data.Models.csproj"
     },
     "Hotel.Web.ViewModels/1.0.0": {
       "type": "project",

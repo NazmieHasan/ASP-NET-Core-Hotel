@@ -175,3 +175,5 @@ C:\Users\HP\source\repos\ASP-NET-Core-Hotel\Hotel.Web\bin\Debug\net6.0\Microsoft
 C:\Users\HP\source\repos\ASP-NET-Core-Hotel\Hotel.Web\bin\Debug\net6.0\Microsoft.Extensions.DependencyModel.dll
 C:\Users\HP\source\repos\ASP-NET-Core-Hotel\Hotel.Web\bin\Debug\net6.0\Newtonsoft.Json.dll
 C:\Users\HP\source\repos\ASP-NET-Core-Hotel\Hotel.Web\bin\Debug\net6.0\Newtonsoft.Json.Bson.dll
+C:\Users\HP\source\repos\ASP-NET-Core-Hotel\Hotel.Web\bin\Debug\net6.0\Hotel.Services.Data.Models.dll
+C:\Users\HP\source\repos\ASP-NET-Core-Hotel\Hotel.Web\bin\Debug\net6.0\Hotel.Services.Data.Models.pdb
