@@ -17,7 +17,7 @@ namespace Hotel.Data.Migrations
         {
 #pragma warning disable 612, 618
             modelBuilder
-                .HasAnnotation("ProductVersion", "6.0.15")
+                .HasAnnotation("ProductVersion", "6.0.21")
                 .HasAnnotation("Relational:MaxIdentifierLength", 128);
 
             SqlServerModelBuilderExtensions.UseIdentityColumns(modelBuilder, 1L, 1);
@@ -41,6 +41,20 @@ namespace Hotel.Data.Migrations
 
                     b.Property<bool>("EmailConfirmed")
                         .HasColumnType("bit");
+
+                    b.Property<string>("FirstName")
+                        .IsRequired()
+                        .ValueGeneratedOnAdd()
+                        .HasMaxLength(15)
+                        .HasColumnType("nvarchar(15)")
+                        .HasDefaultValue("Test");
+
+                    b.Property<string>("LastName")
+                        .IsRequired()
+                        .ValueGeneratedOnAdd()
+                        .HasMaxLength(15)
+                        .HasColumnType("nvarchar(15)")
+                        .HasDefaultValue("Testov");
 
                     b.Property<bool>("LockoutEnabled")
                         .HasColumnType("bit");
@@ -236,31 +250,31 @@ namespace Hotel.Data.Migrations
                     b.HasData(
                         new
                         {
-                            Id = new Guid("869631f6-565c-4adf-b710-ee5196a8dff1"),
+                            Id = new Guid("ab083b53-c4a2-4457-ba52-94b4f6b31cd6"),
                             CategoryId = 1,
                             Number = 201
                         },
                         new
                         {
-                            Id = new Guid("52b95036-b89f-4024-84fb-d36af71b99c6"),
+                            Id = new Guid("084075b1-6840-41f8-8d30-5f3611027f3e"),
                             CategoryId = 1,
                             Number = 202
                         },
                         new
                         {
-                            Id = new Guid("7cc55e45-c895-4a19-a5e1-9c525892823d"),
+                            Id = new Guid("4057b7bb-f30c-436e-a713-9626fcab3bb9"),
                             CategoryId = 1,
                             Number = 203
                         },
                         new
                         {
-                            Id = new Guid("96a33601-2c26-44aa-acaa-68605bc327e2"),
+                            Id = new Guid("f3685318-4a80-4fca-9ea3-e1eb5a6c1fea"),
                             CategoryId = 1,
                             Number = 204
                         },
                         new
                         {
-                            Id = new Guid("a00720d7-625c-4d43-a7e4-3f605e7e8404"),
+                            Id = new Guid("cbaba543-8301-420d-bded-4670f47f79a5"),
                             CategoryId = 1,
                             Number = 205
                         });
