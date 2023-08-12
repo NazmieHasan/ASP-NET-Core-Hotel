@@ -13,11 +13,14 @@
     public class BookingController : Controller
     {
         private readonly IBookingService bookingService;
+        private readonly IUserService userService;
 
-        public BookingController(IBookingService bookingService)
+        public BookingController(IBookingService bookingService,
+            IUserService userService)
         {
             this.bookingService = bookingService;
-        }
+            this.userService = userService;
+    }
 
         [HttpGet]
         public async Task<IActionResult> Add()
@@ -60,6 +63,8 @@
 
             BookingDetailsViewModel viewModel = await this.bookingService
                 .GetDetailsByIdAsync(id);
+            viewModel.User.FullName =
+                   await this.userService.GetFullNameByEmailAsync(this.User.Identity?.Name!);
 
             return View(viewModel);
         }
