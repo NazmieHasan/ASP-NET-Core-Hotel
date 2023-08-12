@@ -8,6 +8,9 @@ namespace Hotel.Web
     using Infrastructure.Extensions;
     using Infrastructure.ModelBinders;
     using Services.Data.Interfaces;
+    using Microsoft.AspNetCore.Identity;
+
+    using static Common.GeneralApplicationConstants;
 
     public class Program
     {
@@ -34,6 +37,7 @@ namespace Hotel.Web
                 options.Password.RequiredLength =
                     builder.Configuration.GetValue<int>("Identity:Password:RequiredLength");
             })
+                .AddRoles<IdentityRole<Guid>>()
                 .AddEntityFrameworkStores<HotelDbContext>();
 
             builder.Services.AddApplicationServices(typeof(ICategoryService));
@@ -73,6 +77,8 @@ namespace Hotel.Web
 
             app.UseAuthentication();
             app.UseAuthorization();
+
+            app.SeedAdministrator(DevelopmentAdminEmail);
 
             app.MapDefaultControllerRoute();
             app.MapRazorPages();
