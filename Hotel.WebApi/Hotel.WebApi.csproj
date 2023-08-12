@@ -1,0 +1,21 @@
+﻿<Project Sdk="Microsoft.NET.Sdk.Web">
+
+  <PropertyGroup>
+    <TargetFramework>net6.0</TargetFramework>
+    <Nullable>enable</Nullable>
+    <ImplicitUsings>enable</ImplicitUsings>
+    <UserSecretsId>a5ad5f8b-8a05-4bf3-b049-240f2870be5e</UserSecretsId>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Swashbuckle.AspNetCore" Version="6.2.3" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\Hotel.Common\Hotel.Common.csproj" />
+    <ProjectReference Include="..\Hotel.Services.Data.Models\Hotel.Services.Data.Models.csproj" />
+    <ProjectReference Include="..\Hotel.Services.Data\Hotel.Services.Data.csproj" />
+    <ProjectReference Include="..\Hotel.Web.Infrastructure\Hotel.Web.Infrastructure.csproj" />
+  </ItemGroup>
+
+</Project>

@@ -1,6 +1,7 @@
 ﻿namespace Hotel.Services.Data.Interfaces
 {
     using Models.Booking;
+    using Models.Statistics;
     using Hotel.Web.ViewModels.Booking;
 
     public interface IBookingService
@@ -16,5 +17,7 @@
         Task<BookingDetailsViewModel> GetDetailsByIdAsync(string bookingId);
 
         Task<CreateBookingFormModel> GetBookingForEditByIdAsync(string bookingId);
+
+        Task<StatisticsServiceModel> GetStatisticsAsync();
     }
 }

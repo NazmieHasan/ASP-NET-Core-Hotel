@@ -6,6 +6,7 @@
     using Hotel.Data.Models;
     using Interfaces;
     using Models.Booking;
+    using Models.Statistics;
     using Web.ViewModels.Booking;
     using Web.ViewModels.Booking.Enums;
     using Web.ViewModels.User;
@@ -127,6 +128,14 @@
             return new CreateBookingFormModel
             {
                 PhoneNumber = booking.PhoneNumber
+            };
+        }
+
+        public async Task<StatisticsServiceModel> GetStatisticsAsync()
+        {
+            return new StatisticsServiceModel()
+            {
+                TotalBookings = await this.dbContext.Bookings.CountAsync()
             };
         }
 
