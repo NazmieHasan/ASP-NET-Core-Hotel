@@ -38,6 +38,11 @@ namespace Hotel.Web
 
             builder.Services.AddApplicationServices(typeof(ICategoryService));
 
+            builder.Services.ConfigureApplicationCookie(cfg =>
+            {
+                cfg.LoginPath = "/User/Login";
+            });
+
             builder.Services
                 .AddControllersWithViews()
                 .AddMvcOptions(options =>

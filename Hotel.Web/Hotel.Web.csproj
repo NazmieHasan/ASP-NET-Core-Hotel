@@ -29,4 +29,8 @@
     <ProjectReference Include="..\Hotel.Web.ViewModels\Hotel.Web.ViewModels.csproj" />
   </ItemGroup>
 
+  <ItemGroup>
+    <Folder Include="Areas\Identity\Pages\Account\" />
+  </ItemGroup>
+
 </Project>
