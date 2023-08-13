@@ -45,6 +45,7 @@ namespace Hotel.Web
             builder.Services.ConfigureApplicationCookie(cfg =>
             {
                 cfg.LoginPath = "/User/Login";
+                cfg.AccessDeniedPath = "/Home/Error/401";
             });
 
             builder.Services
@@ -82,6 +83,14 @@ namespace Hotel.Web
             {
                 app.SeedAdministrator(DevelopmentAdminEmail);
             }
+
+            app.UseEndpoints(endpoints =>
+            {
+                endpoints.MapControllerRoute(
+                  name: "areas",
+                  pattern: "/{area:exists}/{controller=Home}/{action=Index}/{id?}"
+                );
+            });
 
             app.MapDefaultControllerRoute();
             app.MapRazorPages();
